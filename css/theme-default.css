@@ -1,0 +1,117 @@
+/* Default Sphere Game Launcher theme
+ * By DaVince (Vincent Beers), 2013
+ * http://davince.tengudev.com/
+ */
+
+/* Random stuff */
+* { margin: 0; padding: 0; }
+body {
+  font-family: sans-serif;
+  font-size: small;
+  background: rgb(200,220,200);
+}
+p,h1,h2,h3,h4 { margin: 10px 0; }
+h1,h2,h3,h4,.gametitle { font-family: "MgOpen Modata", MgOpenModata, sans-serif; }
+.clear { clear: both; }
+
+/* Header and footer style */
+header { top: 0; }
+footer { bottom: 0; }
+header, footer {
+  display: block;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgb(240,250,255);
+  box-shadow: 0 0 20px rgb(230,250,255);
+}
+header p, header h1, header h2 { margin: 0; }
+header hgroup { display: inline-block; vertical-align: middle; }
+header img.logo { width: 48px; height: 48px; vertical-align: middle; }
+#showdevtools img { vertical-align: middle; }
+header h1 { font-size: large; }
+header h2 { font-size: small; }
+
+
+/* Main section */
+#main {
+  width: 100%;
+  margin-top: 68px;
+  margin-bottom: 36px;
+}
+
+
+/* Game list */
+#gamelist { list-style: none; }
+#gamelist li { padding: 11px; border-bottom: 1px solid rgb(190,210,190); clear: both; }
+#gamelist a:link, #gamelist a:visited, #gamelist a:active, #gamelist a:hover { text-decoration: none; color: black; }
+#gamelist li:hover { background: white; box-shadow: 0 0 40px white; }
+#gamelist li.selected { background: white; }
+#gamelist p { margin: 0; }
+
+a.expand { display: block; height: 50px; } /* Guarantee height of link block, even without a short description */
+.gameheader { float: left; width: 100%; }
+li[class=selected] .gameheader { width: 75%; }
+.gameheader img { width: 40px; height: 40px; float: left; margin: 8px 8px 0 8px; }
+li[class=selected] .gameheader img { width: 64px; height: 64px; }
+.gametitle { font-size: medium; padding-top: 10px; }
+p.directory { font-family: monospace; margin: 5px 0 -3px 7px !important; float: right; width: 100%; text-align: right; }
+
+.launchbutton {
+  display: none;
+  position: relative;
+  float: right;
+  width: 25%;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 24px 12px 12px 12px;
+  top: 8px;
+  text-align: center;
+  background: #eeeeee;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 8px;
+}
+li[class=selected] .launchbutton { display: block; }
+
+/* Game details */
+.gamedetails { display: none; }
+li[class=selected] .gamedetails { display: block; clear: both; }
+.gamedetails a:link { color: blue !important; }
+.gamedetails a:hover { color: lightblue !important; }
+.gamedetails h1 { font-size: medium; margin: 0; }
+.gamedetails h2 { font-size: small; margin-top: 1em; }
+
+.gamedetails div { padding: 8px; box-sizing: border-box; overflow: auto; }
+.col { float: left; width: 50%; }
+.col div { margin-bottom: 7px; margin-right: -7px; height: 25%; outline: 1px solid black; }
+.screenshotarea { height: 35% !important; }
+.gameinfo { height: 15% !important; }
+.gameinfo p { margin: 0; } /* Fix for the markup adding p tags */
+.screenshotarea { padding: 0 !important; text-align: center; vertical-align: middle; }
+.screenshotarea img, .screenshotarea video { display: inline-block; height: 100%; max-width: 100%; padding: 0; }
+
+
+
+/* Credits panel */
+#credits {
+  width: 500px;
+  display: none;
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -200px;
+  
+  background: #aad;
+  padding: 20px;
+  box-shadow: 0 0 20px #669;
+  box-sizing: border-box;
+  border: 1px solid #669;
+  border-radius: 5px;
+}
+#credits ul {
+  margin-left: 20px;
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>SpheRun</title>
+  <link rel="stylesheet" type="text/css" href="css/theme-default.css">
+  <link rel="stylesheet" type="text/css" href="resources/league-gothic/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="resources/mgopen-modata/stylesheet.css">
+  <script src="js/jquery-1.9.0.min.js"></script>
+  
+  <script>VERSION = 0.1;</script>
+  <script src="js/commonfunctions.js"></script>
+  <script src="js/GameManager.js"></script>
+  <script src="js/init.js"></script>
+  <script src="SpheRun.cfg"></script><!-- config -->
+</head>
+
+
+<body>
+<header>
+  <a href="http://spheredev.org" target="_blank"><img class="logo" src="resources/sphere.svg" alt=""></a>
+  <hgroup>
+    <h1>SpheRun</h1>
+    <h2>Version <script>document.write(VERSION);</script></h2>
+  </hgroup>
+</header>
+
+<div id="main">
+  <ul id="gamelist">
+    <!-- Auto-filled by Init() -->
+  </ul>
+</div>
+
+
+<div id="credits">
+  <hgroup>
+    <h1>SpheRun Sphere game launcher</h1>
+    <h2>v<script>document.write(VERSION);</script></h2>
+  </hgroup>
+  
+  <p>
+    By <a href="http://davince.tengudev.com/" target="_blank">DaVince</a>. Running on Node <script>document.write(process.version);</script>.
+    Powered by <a href="https://github.com/rogerwang/node-webkit/" target="_blank">node-webkit</a>.
+  </p>
+  
+  <h2>Libraries used</h2>
+  <ul>
+    <li><a href="https://github.com/chjj/marked" target="_blank">Marked</a></li>
+  </ul>
+</div>
+
+<footer>
+  By DaVince. Running on Node <script>document.write(process.version);</script>.
+  Powered by <a href="https://github.com/rogerwang/node-webkit/" target="_blank">node-webkit</a>.
+</footer>
+
+</body>
+</html>

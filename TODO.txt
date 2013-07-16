@@ -1,0 +1,37 @@
+0.1
+===
+Get it to read games from specified dirs
+Read data from game.sgm, info.txt, screenshot.png, icon.png and display them
+Launch the games
+
+0.2
+===
+Proper config file support (INI or JSON?)
+Add a configuration menu (with link in the header)
+- Engines
+- Games
+- Whether or not to use Wine (Linux/OSX)?
+Make this menu show on first run
+Add an engine selector in the header
+
+0.3
+===
+Keep track of whether or not the engine is running and disable the launch button
+Keyboard support (arrows, enter, ?)
+Open an engine's config.exe
+
+0.4
+===
+Add editors to configuration menu
+Open game with editor
+Open editor
+
+0.5
+===
+Functionally replace config.exe
+Theming support
+
+Ideas after 1.0
+===============
+Get data from an online database of game info?
+Browse data resources (using sphere-web-tools)?

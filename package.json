@@ -1,0 +1,10 @@
+{
+  "name": "SphereGameLauncher",
+  "window": {
+    "width": 800,
+    "height": 720,
+    "position": "center",
+    "toolbar": false
+  },
+  "main": "index.html"
+}
